@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color: #f52768;
+    --secondary-color: rgb(252, 174, 174);
+    --light-color: rgb(255, 234, 221);
+    --dark-text: rgb(57, 54, 70);
+    --light-text: rgb(109, 93, 110);
+}
+
+/* shared style start */
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.btn-primary{
+    padding: 10px 25px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    font-weight: 500;
+}
+/* shared style end */
+
+/* header style start */
+header {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav > h3{
+    color: var(--dark-text);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-content, .banner-img{
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+.banner-img{
+    background-image: url('./images/Circle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+
+}
+
+.banner-img img{
+    width: 100%;
+    padding: 50px;
+}
+
+.banner-content h1{
+    font-size: 2.8rem;
+}
+
+.banner-content p{
+    color: var(--light-text);
+    padding: 15px 0;
+}
+/* header style end */
+
+/* sponsor style start */
+.sponsor-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    border: 1.5px solid;
+    border-image: linear-gradient(to right, transparent, rgba(169, 169, 169, 0.93),transparent);
+    border-left: 0;
+    border-right: 0;
+    border-image-slice: 1;
+}
+/* sponsor style end */
+
+/* collections style start */
+.collections{
+    margin-top: 80px;
+    color: var(--dark-text);
+}
+
+.collections > h2{
+    text-align: center;
+}
+
+.collection{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.collection img{
+    width: 100%;
+}
+
+.collection-item{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* collections style end */
